@@ -1,0 +1,13 @@
+<!-- This policy can be used to create or modify the standard HTTP request and response messages -->
+<AssignMessage async="false" continueOnError="false" enabled="true" xmlns='http://www.sap.com/apimgmt'>
+ 
+	<!-- Sets a new value to the existing parameter -->
+	<Add>
+		<Headers>      
+			<Header name="Authorization">Basic XXXXXXXXXX</Header>
+			<Header name="Accept">application/json</Header>
+        </Headers> 
+	</Add>
+	<IgnoreUnresolvedVariables>false</IgnoreUnresolvedVariables>
+	<AssignTo createNew="true" type="request"></AssignTo>
+</AssignMessage>
